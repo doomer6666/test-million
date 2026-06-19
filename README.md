@@ -2,6 +2,10 @@
 
 Fullstack приложение для работы со списком из миллиона элементов: выбор, фильтрация, сортировка drag&drop и инфинити-скролл.
 
+## Ссылка на деплой(Vercel)
+
+https://test-million-zps9.vercel.app
+
 ## Стек
 
 - **Backend**: Node.js + Express
