@@ -21,6 +21,10 @@ app.use('/api', router);
 
 app.get('/health', (_req, res) => res.json({ status: 'ok' }));
 
-app.listen(PORT, () => {
-    log(`Listening on http://localhost:${PORT}`);
-});
+export default app;
+
+if (!process.env.VERCEL) {
+    app.listen(PORT, () => {
+        log(`Listening on http://localhost:${PORT}`);
+    });
+}
